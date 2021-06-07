@@ -1,8 +1,8 @@
-package com.github.pedroaugusto92.citiesapi;
+package com.github.pedroaugusto92.citiesapi.countries.resources;
 
 
-import com.github.pedroaugusto92.citiesapi.countries.Country;
-import com.github.pedroaugusto92.citiesapi.repository.CountryRepository;
+import com.github.pedroaugusto92.citiesapi.countries.entities.Country;
+import com.github.pedroaugusto92.citiesapi.countries.repositories.CountryRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ import java.util.Optional;
 @RequestMapping("/countries")
 public class CountryResource {
 
-    private CountryRepository repository;
+    private final CountryRepository repository;
 
     public CountryResource(CountryRepository repository) {
         this.repository = repository;

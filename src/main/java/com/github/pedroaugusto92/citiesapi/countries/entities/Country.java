@@ -1,4 +1,4 @@
-package com.github.pedroaugusto92.citiesapi.countries;
+package com.github.pedroaugusto92.citiesapi.countries.entities;
 
 import lombok.Getter;
 
